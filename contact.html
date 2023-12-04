@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .card {
+  background-color: white; /* สีขาว */
+  background-size: cover; /* ปรับให้ภาพเต็มหน้าและสมบูรณ์ */
+  background-repeat: no-repeat;
+}
+
+    .card {
+  display: flex; /* ให้การ์ดเป็น flex container */
+  /* เพิ่มคุณสมบัติอื่น ๆ ตามต้องการ */
+}
+
+.card-content {
+  flex: 1; /* ให้ส่วนของรูปมีขนาดเท่ากับ 1 (ส่วนที่เหลือจะกำหนดในฟอร์ม) */
+  padding: 20px;
+}
+
+.form-content {
+  flex: 1; /* ให้ส่วนของฟอร์มมีขนาดเท่ากับ 1 (ส่วนที่เหลือจะกำหนดในรูป) */
+  padding: 20px;
+}
+form {
+  margin-left: 100px; /* ปรับตำแหน่งด้วย CSS */
+}
+
+
+  </style>
+  <meta charset="UTF-8">
+  <title>MyResume - Contact Me</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="work.html">My Photo</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+      <main>
+        <section class="card">
+          <div class="card-content">
+            <img src="https://i.pinimg.com/564x/d9/92/05/d9920538f0bf05e6ea1c8eee7f854075.jpg" alt="Image" style="width: 100%; height: auto;">
+
+          </div>
+          <div class="form-content">
+            <p style="text-align: center;"><b>contact</b></p>
+            <form style="margin-left: 50px;"> 
+        <h4 >Enter Now</h4>
+        <label class="let small-label" for="">Your Name</label>
+        <input class="let-e" type="text" name="" id="">
+        <label class="let small-label" for="">Your E-mail</label>
+        <input class="let-e" type="text" name="" id="">
+        <label class="let small-label" for="">Gender</label>
+        
+          
+          <div class="let-s">
+          
+            <select class="let-s" id="Gender" name="Gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div><br>
+          
+                    <h5><Label class="let let small-label" for="input-message">Message</Label></h5>
+                    <textarea style="width: 300px; height: 200x; margin: 5px;" , id="input-message" name="input-message" rows="5"></textarea>
+                    <br>
+          <input type="submit" class="to-inline" value="Submit">
+          <input type="reset" class="to-inline"></input>
+        </form>
+      
+      
+      </body>
+    </section>
+  </main>
+</body>
+</html>

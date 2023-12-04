@@ -1,0 +1,270 @@
+/* Basic CSS Reset */
+body {
+  background-image: url('https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=600'); /* ใส่ URL ของรูปภาพที่คุณต้องการ */
+  background-size: cover; /* ปรับให้ภาพเต็มหน้าและสมบูรณ์ */
+  background-repeat: no-repeat;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family:inherit;
+    line-height: 1.0;
+    
+  }
+
+  header ul {
+    margin-top: 20px; /* ปรับขอบบนของเมนูให้ขยับลงมา */
+
+  }
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    padding: 3px 20px;
+    position: relative; 
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav ul li a:hover {
+    color: #127cd2;
+  }
+  nav ul li::after {
+    content: '|';
+    position: absolute;
+    right: -10px;
+    color: #999;
+  }
+
+  nav ul li:last-child::after {
+    content: '';
+  }
+
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #999;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  nav ul li a:hover::after {
+    transform: scaleX(1);
+  }
+  main {
+    padding: 20px;
+  }
+  p b {
+    font-size: 1.4em;
+  
+  }
+  p {
+    font-size: 1.5em; /* ขนาดเล็กลง */
+    font-weight: bold; /* ทำให้ตัวหนา */
+  }
+  h1 {
+    font-size: 0.8em; /* ขนาดเล็กลง */
+    font-weight: normal; /* ไม่ใช้ตัวหนา */
+    margin-bottom: 25px; /* เพิ่มระยะห่างด้านล่างของทุก <h2> */
+  }
+  h2 {
+    font-size: 1.0em; /* ขนาดเล็กลง */
+    font-weight: bold; /* ทำให้ตัวหนา */
+    margin-bottom: 25px; /* เพิ่มระยะห่างด้านล่างของทุก <h2> */
+
+}
+hr {
+  border: none; /* เอาเส้นขอบออก */
+  border-top: 1px solid rgb(135, 151, 26); /* เพิ่มเส้นด้านบน */
+}
+
+ul {
+  font-size: 1.0em;
+  font-weight: normal;
+  margin-bottom: 25px;
+  margin-left: 20px; /* กำหนดระยะห่างจากขอบซ้าย */
+  padding-left: 30px; /* กำหนดระยะห่างของเนื้อหาภายใน */
+}
+
+
+  img {
+    width: 300px; /* กำหนดความกว้างของรูปภาพเป็น 200px */
+    height: 300px; /* กำหนดความสูงของรูปภาพเป็น 200px */
+    border-radius: 50%; /* ทำให้มีเส้นขอบโค้งทำให้เป็นวงกลม */
+  }
+  table {
+    border-collapse: collapse;
+ 
+   
+  }
+  h3[rowspan] {
+    width: 20%; /* ปรับความกว้างของช่องที่มี rowspan="2" */
+  }
+
+th, td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+}
+
+th:last-child div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    height: 100%; /* ทำให้ div ทำงานในพื้นที่เต็มของ th */
+}
+
+input {
+  display: block;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.to-inline {
+  display: inline-block;
+}
+
+form {
+
+  width: 500px;
+  padding: 16px;
+  margin: 20px auto;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.let {
+  padding: 15px;
+}
+
+.let-s {
+  width: 80%; /* หรือเพิ่มค่าตามที่ต้องการให้ใหญ่ขึ้น */
+  margin: 5px;
+  height: 25px;
+  outline: none; /* เพิ่มบรรทัดนี้เพื่อลบเส้นขอบที่ปรากฏเมื่อเลือก */
+
+}
+.small-label {
+  font-size: 15px; /* ปรับขนาดของ label เป็นขนาดเล็กลง เช่น 14px */
+}
+
+h4 {
+  font-size: 1.5em; /* ขนาดเล็กลง */
+  font-weight: bold; /* ทำให้ตัวหนา */
+  margin-bottom: 25px; /* เพิ่มระยะห่างด้านล่างของทุก <h2> */
+}
+h5 {
+  
+  font-weight: normal; /* ไม่ใช้ตัวหนา */
+}
+
+
+
+
+
+
+
+.let-e {
+  width: 300px;
+}
+
+.let-d {
+  text-align: left;
+}
+.to-inline[type="submit"] {
+  background-color: #4285F4; /* เปลี่ยนสีพื้นหลังของปุ่มเป็นสีนี้ */
+  color: rgb(255, 255, 255); /* เปลี่ยนสีข้อความในปุ่มเป็นสีขาว */
+  border: none;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.to-inline[type="reset"] {
+  background-color: #f44336; /* เปลี่ยนสีพื้นหลังของปุ่ม Reset เป็นสีนี้ */
+  color: rgb(255, 255, 255); /* เปลี่ยนสีข้อความในปุ่ม Reset เป็นสีขาว */
+  border: none;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.container {
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 50%; /* ปรับความกว้างของคอนเทนเนอร์เหลือ 80% */
+  margin: 0 auto; /* จัดคอนเทนเนอร์ตรงกลาง */
+  background-image: url('https://i.pinimg.com/originals/79/02/7f/79027ff8fa3073b6b4cffc79c252019e.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(88, 171, 216); /* เปลี่ยนสีของกรอบเป็นสีขาว */
+}
+/* ลักษณะของรูป */
+.profile-img {
+  width: 250px;
+  
+  display: block;
+  
+
+  
+
+    height: auto;
+    display: block;
+    margin: 0 35px 100px 0; /* ปรับระยะห่างของรูปภาพ */
+    float: left; /* จัดให้รูปภาพอยู่ด้านซ้าย */
+  
+}
+
+/* ลักษณะของลิสต์ */
+
+li {
+  margin-bottom: 10px;
+}
+.name-title {
+  vertical-align: top;
+  margin-top: 70px; /* เพิ่มระยะห่างด้านบนของข้อความ */
+}
+.card {
+
+  padding: 20px; /* ระยะห่างภายในการ์ด */
+  width: 80%; /* กำหนดความกว้างของการ์ด */
+  margin: 0 auto; /* จัดการระยะห่างแนวนอน */
+  box-shadow: 10px 10px 10px rgba(84, 64, 64, 0.2); /* เพิ่มเงา */}
+
+.card p b {
+  font-weight: bold; /* ทำให้ตัวหนังสือในการ์ดหนา */
+}
+
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
+.center-table {
+  margin: 0 auto;
+}
